@@ -1,8 +1,8 @@
 /* ini css */
 
 .section-content{
-    background-color: lightgreen;
-    color: white;
+    background-color: lightskyblue;
+    color: black;
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
@@ -32,7 +32,18 @@ input{
     padding: 4px;
     font-family: math;
     background-color: aquamarine;
-    border: 1px solid chocolate;
+    border: 1px solid rgb(30, 159, 210);
     border-radius: 4px;    
     width: 100%;
+}
+
+form>button{
+    padding: 10px;
+    background-color: aquamarine;
+    border: 1px solid rgb(30, 159, 210);
+    border-radius: 4px;
+}
+
+#reset-btn{
+    background-color: cadetblue;
 }
