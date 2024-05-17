@@ -1,1 +1,38 @@
 /* ini css */
+
+.section-content{
+    background-color: lightgreen;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+} 
+
+.section-content>h3{
+    margin: 0;
+}
+
+#switch-keliling{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    color: blue;
+}
+
+.formula-img{
+    text-align: center;
+}
+
+img{
+   height: 100px; 
+}
+input{
+    padding: 4px;
+    font-family: math;
+    background-color: aquamarine;
+    border: 1px solid chocolate;
+    border-radius: 4px;    
+    width: 100%;
+}
