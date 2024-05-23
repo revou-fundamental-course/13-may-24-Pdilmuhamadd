@@ -3,85 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadhil RevoU Assignment Calculator</title>
+    <title>RevoU Assignment Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!--Header-->
     <header>
-        <h1>Welcome to my Calculator</h1>
-        <section>
-            <p>
-                Hello Mate!!, Welcome to my Calculator! Web untuk menghitung nilai luas dan keliling bangun datar
-            </p>
-        </section>
+        <h1>Welcome to Katik</h1>
+        <p>Hello Friends!!</p>
+        <p>Welcome to my Calculator! Web untuk menghitung nilai luas dan keliling Segitiga</p>
+
+        <button type="button" id="switch-keliling" class="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
     </header>
+    <!--End Header-->
 
-    <section>
-        <div class="section-content">
-            <h3>Triangle</h3>
-        </div>
+    <!--Main-->
+    <main>
+        <!--Luas-->
+        <section id="luas-section" class="card">
+            <div class="luas-content">
+                <h3>Luas Segitiga</h3>
+            </div>
+            <div class="rumus-luas">
+                <p>Rumus Luas Segitiga :</p>
+                <p class="rumus">L = 1/2 x alas x tinggi</p>
 
-        <button type="button" id="switch-keliling"><u>Switch ke keliling Segitiga</u></button>
-
-        <div class="section-content">
-            <h2>Luas Segitiga</h2>
-        </div>
-
-        <div class="formula-img">
-            <img src="https://img.okezone.com/okz/500/content/2023/12/07/624/2934721/kumpulan-rumus-segitiga-dalam-matematika-mudah-IezLAzC9Fs.jpg" alt="Formula Segitiga">
-        </div>
-
-        <p>Rumus Luas Segitiga :</p>
-        <p class="rumus">L = 1/2 x alas x tinggi</p>
-        
-        <hr>
-        <header>
-            <h2>Hitung Luas Segitiga</h2>
-        </header>
-
-        <form id="triangle-form">
-            <div>
-                <label for="alas">Alas:</label>
-                <input type="number" id="alas" required>
+                <img src="assets/img/gambarsegitiga.png" alt="Gambar" class="segitiga-gambar">
             </div>
 
-            <div>
-                <label for="tinggi">Tinggi:</label>
-                <input type="number" id="tinggi" required>
+            <hr>
+            <!--Hitung Luas-->
+            <div class="hitung-luas">
+                <h2>Hitung Luas Segitiga</h2>
+                <form>
+                    <input type="number" id="alas" placeholder="Alas">
+                <br>
+                    <input type="number" id="tinggi" placeholder="Tinggi">    
+                    <br>
+                </form>
             </div>
 
-            <p id="result-luas"></p>
+            <!--Hasil Luas-->
+            <div id="result-luas"></div>
+            <div class="button">
+                <div class="hitung">
+                    <button id="hitung-luas-btn" onclick="hitungluas()">Hitung</button>
+                </div>
 
-            <button type="button" id="hitung-luas-btn">Hitung Luas</button>
-            <button type="reset" id="reset-btn">Reset</button>
-        </form>
+                <div class="reset">
+                    <button id="reset-luas-btn" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </section>
 
-        <div class="section-content hidden" id="keliling-section">
-            <h2>Hitung Keliling Segitiga</h2>
-        </div>
+        <!--Keliling-->
+        <section id="keliling-section" class="card hidden">
+            <div class="keliling-content">
+                <h3>Keliling Segitiga</h3>
+            </div>
+            <div class="rumus-keliling">
+                <p>Rumus Keliling Segitiga :</p>
+                <p class="rumus">K = sisi A + sisi B + sisi C</p>
 
-        <form id="triangle-keliling-form" class="hidden">
-            <div>
-                <label for="sisi1">Sisi 1:</label>
-                <input type="number" id="sisi1" required>
+                <img src="assets/img/gambarsegitiga.png" alt="Gambar" class="segitiga-gambar">
             </div>
 
-            <div>
-                <label for="sisi2">Sisi 2:</label>
-                <input type="number" id="sisi2" required>
+            <hr>
+            <!--Hitung Keliling-->
+            <div class="hitung-keliling">
+                <h2>Hitung Keliling Segitiga</h2>
+                <form>
+                    <input type="number" id="sisi-a" placeholder="Sisi A">
+                    <br>
+                    <input type="number" id="sisi-b" placeholder="Sisi B">
+                    <br>
+                    <input type="number" id="sisi-c" placeholder="Sisi C">
+                    <br>
+                </form>
             </div>
 
-            <div>
-                <label for="sisi3">Sisi 3:</label>
-                <input type="number" id="sisi3" required>
+            <!--Hasil Keliling-->
+            <div id="result-keliling"></div>
+            <div class="button">
+                <div class="hitung">
+                    <button id="hitung-keliling-btn" onclick="hitungkeliling()">Hitung</button>
+                </div>
+
+                <div class="reset">
+                    <button id="reset-keliling-btn" onclick="reset()">Reset</button>
+                </div>
             </div>
-
-            <p id="result-keliling"></p>
-
-            <button type="button" id="hitung-keliling-btn">Hitung Keliling</button>
-            <button type="reset" id="reset-keliling-btn">Reset</button>
-        </form>
-    </section>
+    </main>
+    <!--End Main-->
 
     <script src="js/script.js"></script>
 </body>

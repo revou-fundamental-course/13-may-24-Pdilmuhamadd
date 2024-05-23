@@ -1,72 +1,145 @@
 /* ini css */
 
-header{
-    text-align: center;
+/* CSS Untuk Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* CSS untuk Navigasi */
+.nav-content {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-header h1 {
-    margin-bottom: 20px;
+.nav-content div {
+    margin: 0 10px;
 }
 
-.section-content {
-    background-color: lightskyblue;
-    color: black;
-    padding-top: 2px;
-    padding-bottom: 2px;
+.nav-content a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.nav-content a:hover {
+    background-color: #ddd;
+}
+
+/* CSS Untuk Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.section-content > h3 {
+header h1 {
     margin: 0;
 }
 
-#switch-keliling {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    width: 100%;
-    background-color: white;
-    border: 0px;
-    color: blue;
-    cursor: pointer;
+/* CSS Untuk Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.formula-img {
+/* CSS Untuk Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
     text-align: center;
 }
 
-img {
-    height: 100px; 
+.card h3 {
+    margin-top: 0;
 }
 
-input {
-    padding: 4px;
-    font-family: math;
-    background-color: aquamarine;
-    border: 1px solid rgb(30, 159, 210);
-    border-radius: 4px;    
+/* CSS Untuk Form */
+form {
+    margin: 10px 0;
+}
+
+form input {
     width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
-form > button {
     padding: 10px;
-    background-color: aquamarine;
-    border: 1px solid rgb(30, 159, 210);
-    border-radius: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* CSS Untuk Tombol */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
-    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#reset-btn {
-    background-color: cadetblue;
+.button button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* CSS untuk Tombol Switch */
+.switch-keliling {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.switch-keliling:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Untuk Result */
+#result-luas,
+#result-keliling {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* untuk hidden */
 .hidden {
     display: none;
 }
 
-.rumus{
-    text-align: center;
+/* CSS untuk Gambar Rumus */
+.segitiga-gambar {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }
