@@ -1,49 +1,72 @@
 /* ini css */
 
-.section-content{
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.section-content {
     background-color: lightskyblue;
     color: black;
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
-} 
+}
 
-.section-content>h3{
+.section-content > h3 {
     margin: 0;
 }
 
-#switch-keliling{
+#switch-keliling {
     margin-top: 12px;
     margin-bottom: 12px;
     width: 100%;
     background-color: white;
     border: 0px;
     color: blue;
+    cursor: pointer;
 }
 
-.formula-img{
+.formula-img {
     text-align: center;
 }
 
-img{
-   height: 100px; 
+img {
+    height: 100px; 
 }
-input{
+
+input {
     padding: 4px;
     font-family: math;
     background-color: aquamarine;
     border: 1px solid rgb(30, 159, 210);
     border-radius: 4px;    
     width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-form>button{
+form > button {
     padding: 10px;
     background-color: aquamarine;
     border: 1px solid rgb(30, 159, 210);
     border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-#reset-btn{
+#reset-btn {
     background-color: cadetblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.rumus{
+    text-align: center;
 }

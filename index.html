@@ -11,7 +11,7 @@
         <h1>Welcome to my Calculator</h1>
         <section>
             <p>
-                Hello Mate!!, Welcome to my Calculator!
+                Hello Mate!!, Welcome to my Calculator! Web untuk menghitung nilai luas dan keliling bangun datar
             </p>
         </section>
     </header>
@@ -23,36 +23,66 @@
 
         <button type="button" id="switch-keliling"><u>Switch ke keliling Segitiga</u></button>
 
-        <section>
-            <div class="section-content">
-                <h2>Luas Segitiga</h2>
+        <div class="section-content">
+            <h2>Luas Segitiga</h2>
+        </div>
+
+        <div class="formula-img">
+            <img src="https://img.okezone.com/okz/500/content/2023/12/07/624/2934721/kumpulan-rumus-segitiga-dalam-matematika-mudah-IezLAzC9Fs.jpg" alt="Formula Segitiga">
+        </div>
+
+        <p>Rumus Luas Segitiga :</p>
+        <p class="rumus">L = 1/2 x alas x tinggi</p>
+        
+        <hr>
+        <header>
+            <h2>Hitung Luas Segitiga</h2>
+        </header>
+
+        <form id="triangle-form">
+            <div>
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" required>
             </div>
 
-            <div class="formula-img">
-                <img src="data:image/png;base64,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">
+            <div>
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" required>
             </div>
 
-            <p>Lorem Ipsum nanana</p>
-        </section>
-        </hr>
-            <header>
-                <h2>Hitung Luas Segitiga</h2>
-            </header>
+            <p id="result-luas"></p>
 
-            <form>
-                <div>
-                    <label>Alas:</label><input/>
-                </div>
+            <button type="button" id="hitung-luas-btn">Hitung Luas</button>
+            <button type="reset" id="reset-btn">Reset</button>
+        </form>
 
-                <div>
-                    <label>Tinggi:</label><input/>
-                </div>
+        <div class="section-content hidden" id="keliling-section">
+            <h2>Hitung Keliling Segitiga</h2>
+        </div>
 
-                <p>Diketahui: Lorem ipsum </p>
+        <form id="triangle-keliling-form" class="hidden">
+            <div>
+                <label for="sisi1">Sisi 1:</label>
+                <input type="number" id="sisi1" required>
+            </div>
 
-                <button type="button">Hitung</button>
-                <button type="button" id="reset-btn">Reset</button>
-            </form>
+            <div>
+                <label for="sisi2">Sisi 2:</label>
+                <input type="number" id="sisi2" required>
+            </div>
+
+            <div>
+                <label for="sisi3">Sisi 3:</label>
+                <input type="number" id="sisi3" required>
+            </div>
+
+            <p id="result-keliling"></p>
+
+            <button type="button" id="hitung-keliling-btn">Hitung Keliling</button>
+            <button type="reset" id="reset-keliling-btn">Reset</button>
+        </form>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
